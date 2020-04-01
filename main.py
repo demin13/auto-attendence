@@ -91,7 +91,7 @@ if __name__ == "__main__":
                 text_box = WebDriverWait(driver, 10).until(
                     EC.presence_of_element_located((By.ID, "chat-input"))
                 )
-                text_box.send_keys(f"Roll no. {roll}")
+                text_box.send_keys(roll,u'\ue007')
                 print("Attendence marked!")
     except Exception as e:
         print(e)
